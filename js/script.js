@@ -19,8 +19,8 @@ function resetFilterBtns(){
 
 // Array of background images for the header
 var headerBackgroundImages = [
-  'url(../images/perfume-banner-1.jpg)',
-  'url(../images/perfume-banner-2.jpg)',
+  'url(https://github.com/NNikoGG/ecommerce-website-sample/blob/master/images/perfume-banner-1.jpg?raw=true)',
+  'url(https://github.com/NNikoGG/ecommerce-website-sample/blob/master/images/perfume-banner-2.jpg?raw=true)',
   // Add more image URLs as needed
 ];
 
