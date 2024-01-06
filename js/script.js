@@ -16,3 +16,25 @@ function resetFilterBtns(){
     $(this).removeClass('active-filter-btn');
   });
 }
+
+// Array of background images for the header
+var headerBackgroundImages = [
+  'url(../images/perfume-banner-1.jpg)',
+  'url(../images/perfume-banner-2.jpg)',
+  // Add more image URLs as needed
+];
+
+// Function to update the header's background image
+function updateHeaderBackground(index) {
+  document.getElementById('header').style.backgroundImage = headerBackgroundImages[index];
+}
+
+// Event listener for carousel slide change
+document.querySelector('#header.carousel').addEventListener('slide.bs.carousel', function (event) {
+  var nextSlideIndex = event.to; // 'to' is the index of the next slide
+  updateHeaderBackground(nextSlideIndex);
+});
+
+// Initial background image setup
+updateHeaderBackground(0); // Set the initial background image for the header
+

@@ -53,7 +53,12 @@ body{
 
 /* header */
 #header{
-    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+    background: top/cover no-repeat;
+    transition: background-image 1s ease-in-out; /* Add this line */
+}
+
+#slide1, #slide2{
+    text-shadow: 1px 1px #333;
 }
 
 .carousel-inner h1{
@@ -61,7 +66,7 @@ body{
     font-family: var(--lg-font);
 }
 .carousel-item .btn{
-    border-color: #fff!important;
+    border-color: rgb(85, 85, 85)!important;
 }
 .carousel-item .btn:hover{
     border-color: var(--pink)!important;
@@ -98,6 +103,19 @@ body{
     border-radius: 50%;
 }
 
+.collection-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.collection-img:hover img{
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
 /* special */
 .special-img span{
     top: 20px;
@@ -119,20 +137,23 @@ body{
 
 /* offers */
 #offers{
-    background: url(../images/offer_img.jpg) center/cover no-repeat;
+    background: url(../images/discount-banner.jpg) center/cover no-repeat;
 }
 #offers .row{
     min-height: 60vh;
 }
 .offers-content span{
     font-size: 28px;
+    text-shadow: 1px 1px #333;
 }
 .offers-content h2{
     font-size: 60px;
     font-family: var(--lg-font);
+    text-shadow: 1px 1px #333;
 }
 .offers-content .btn{
     border-color: transparent!important;
+    text-shadow: 1px 1px #333;
 }
 
 /* about */
