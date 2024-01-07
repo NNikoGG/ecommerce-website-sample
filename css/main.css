@@ -97,7 +97,7 @@ body{
 }
 .collection-img span{
     top: 20px;
-    right: 20px;
+    right: -3px;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -111,9 +111,9 @@ body{
 
 .collection-img:hover img{
     cursor: pointer;
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 /* offers */
@@ -140,6 +140,21 @@ body{
 /* about */
 #about{
     background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* popular */
+.row img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.row img:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 /* newsletter */
